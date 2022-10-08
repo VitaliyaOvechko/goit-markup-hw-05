@@ -371,7 +371,7 @@ h1 {
 }
 .team-text {
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 16px;
 
         font-size: 16px;
         line-height: 1.19;
@@ -387,15 +387,16 @@ h1 {
 
 .team-content {
         padding-top: 30px;
-        padding-bottom: 0px;
+        padding-bottom: 30px;
 }
 
 .team-soc-list {
         display: flex;
         justify-content: center;
         gap: 10px;
-        margin-top: 16px;
-        margin-bottom: 30px;
+
+        margin: 0;
+        padding: 0;
 }
 
 .team-soc-link {
@@ -618,9 +619,11 @@ h1 {
         margin-bottom: 4px;
 
         font-weight: 700;
-        font-size: 18px;                
+        font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+
+        color: var(--main-color);
 }
 
 .project-text {
