@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="hero-content container">
           <h1>Ефективні рішення для вашого бізнесу</h1>
-          <button class="main-button" type="button">Замовити послугу</button>
+          <button data-modal-open class="main-button" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -127,28 +129,43 @@
           <h2 class="properties-head">Чим ми займаємося</h2>
           <ul class="properties-list list">
             <li class="properties-item">
-              <img
-                src="./images/img.jpg"
-                alt="website development"
-                width="370"
-                height="294"
-              />
+              <div class="properties-item-thumb">
+                <img
+                  src="./images/img.jpg"
+                  alt="website development"
+                  width="370"
+                  height="294"
+                />
+                <div class="properties-rectangle-name">
+                  <h3 class="properties-name">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="properties-item">
-              <img
-                src="./images/img_2.jpg"
-                alt="application development"
-                width="370"
-                height="294"
-              />
+              <div class="properties-item-thumb">
+                <img
+                  src="./images/img_2.jpg"
+                  alt="application development"
+                  width="370"
+                  height="294"
+                />
+                <div class="properties-rectangle-name">
+                  <h3 class="properties-name">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="properties-item">
-              <img
-                src="./images/img_3.jpg"
-                alt="design"
-                width="370"
-                height="294"
-              />
+              <div class="properties-item-thumb">
+                <img
+                  src="./images/img_3.jpg"
+                  alt="design"
+                  width="370"
+                  height="294"
+                />
+                <div class="properties-rectangle-name">
+                  <h3 class="properties-name">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -430,5 +447,17 @@
         </div>
       </div>
     </footer>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="modal-close-button">
+          <svg class="" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
